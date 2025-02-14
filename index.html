@@ -8,7 +8,7 @@
     <meta property="og:image" content="11.jpg" />
     <meta property="og:url" content="https://yourwebsite.com" />
     <meta property="og:type" content="website" />
-  <title>Proposal Page</title>
+  <title>Home Page</title>
   <style>
     /* General Reset */
     body {
@@ -17,29 +17,27 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #b3daff, #87c4ff);
+      background: linear-gradient(135deg, #f6ffc3, #f5f37b);
       font-family: "Comic Sans MS", cursive, sans-serif;
-      color: black;
+      color: #000000;
       text-align: center;
       flex-direction: column;
     }
 
-    .heart-container {
+    
+    .house-container {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
     }
 
-    /* Perfect Heart SVG */
-    .heart {
-      width: 120px;
-      height: 120px;
-      fill: #ffffff;
+    .house {
+      width: 240px;
+      height: 240px;
       animation: pulse 1.5s infinite ease-in-out;
-      filter: drop-shadow(0 0 10px #4a75f7);
+      filter: drop-shadow(0 0 10px #ffcc00);
     }
-
     /* Glow Effect */
     @keyframes pulse {
       0%,
@@ -58,7 +56,7 @@
     .shayari-text {
       font-size: 1.5em;
       font-weight: bold;
-      color: black;
+      color: #341d00;
       display: inline-block;
       line-height: 1.5;
       opacity: 0; /* Initially hidden */
@@ -161,34 +159,37 @@
 
     /* Button Styling */
     .propose-btn {
-      background-color: #48c9b0
+      background-color: #fff04d;
       border: none;
       padding: 15px 30px;
-      color: #a3cfff;
-      font-size: 1.2em;
+      color: rgb(88, 50, 3);
+      font-size: 1.8em;
       cursor: pointer;
       border-radius: 25px;
       transition: background-color 0.3s ease;
     }
 
     .propose-btn:hover {
-      background-color: #ffffff;
-      color: #26f2d1;
+      background-color: #3f2a00;
+      color: #e2fa11;
     }
   </style>
 </head>
 
 <body>
-  <div class="heart-container">
-    <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+  <div class="house-container">
+    <svg class="house" viewBox="0 0 100 100">
+      <polygon points="50,10 90,40 90,90 10,90 10,40" fill="#ffcc00"/>
+      <rect x="35" y="50" width="30" height="40" fill="#8b5a2b"/>
+      <rect x="45" y="65" width="10" height="25" fill="#3d2b1f"/>
     </svg>
+  </div>
 
     <!-- First Line of Shayari (Appears first) -->
     <div class="shayari-text">
-      <span class="word">Hey</span>
+      <span class="word">Hello</span>
       <span class="word">my</span>
-      <span class="word">Prince,</span><br>
+      <span class="word">home,</span><br>
 
       <span class="word">I</span>
       <span class="word">have</span>
